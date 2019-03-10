@@ -1,0 +1,56 @@
+<!Doctype>
+<html ng-app="myapp">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>	
+	<title>ContactList</title>
+</head>
+<body>
+<!--	<h2>Conatcat App</h2>
+	<div class="container" ng-controller="Appctrl">
+	<h2>Contact List App</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="contact in contactlist">
+				<td>{{contact.name}}</td>
+				<td>{{contact.email}}</td>
+				<td>{{contact.phone}}</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<button type="button" class="btn btn-primary" ng-click="about()">About</button>
+	<button type="button" class="btn btn-primary" ng-click="contact()">Contact</button> 
+	<button onclick="javascript:jsforce.browser.login();">Login</button>-->
+	<div ng-view>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.9.1/jsforce.min.js"></script>
+	<script src="controllers/parent.js"></script>
+	<script src="controllers/controller.js"></script>
+	<script src="controllers/calendar.js"></script>
+	<script src="controllers/about.js"></script>
+	<!--<script>
+		jsforce.browser.init({
+  			clientId: '3MVG9ZL0ppGP5UrBwja9dImN2UHHYxbYwea.bz5tqwP_hOKEpgfV2jKHYY9dYndvjHeCqy3bd5uNu28PknV9U',
+  			redirectUri: 'http://localhost:3000/requestCallBack'
+		});
+		jsforce.browser.on('connect', function(conn) {
+		  conn.query('SELECT Id, Name FROM Account', function(err, res) {
+		    if (err) { return console.log(err); }
+		    console.log(res);
+		  });
+});
+	</script> -->
+	
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="container">
+	<h2>Contact List App</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="contact in contactlist">
+				<td>{{contact.name}}</td>
+				<td>{{contact.email}}</td>
+				<td>{{contact.phone}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<button type="button" class="btn btn-primary" ng-click="about()">About</button>
+	<button type="button" class="btn btn-primary" ng-click="contact()">Contact</button>
+</div>
